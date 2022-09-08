@@ -8,7 +8,7 @@ const queryClient = new QueryClient();
 
 export const idContext = createContext({
   idHolder: [""],
-  setIdHolder: ([]) => console.log(),
+  setIdHolder: (e:any) => console.log(),
 });
 
 interface NumberType {

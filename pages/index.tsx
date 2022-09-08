@@ -64,8 +64,11 @@ export function Home() {
   const handleAddToCartClick = (i: any) => {
     let foodId = i.target.previousElementSibling.innerText.substr(9);
 
+    
+    
+
     if (idHolder) {
-      setIdHolder((prev) => [...prev, foodId]);
+      setIdHolder((prevState:any) => [...prevState, foodId]);
     } else {
       setIdHolder(foodId);
     }
